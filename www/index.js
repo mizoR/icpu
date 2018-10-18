@@ -1,3 +1,15 @@
-import * as wasm from "icpu";
+import { Cpu } from "icpu";
 
-wasm.greet();
+const view = document.getElementById("emulator");
+
+const cpu = Cpu.new();
+
+const renderLoop = () => {
+  cpu.tick();
+
+  view.textContent = cpu.render();
+
+  requestAnimationFrame(renderLoop);
+};
+
+requestAnimationFrame(renderLoop);
