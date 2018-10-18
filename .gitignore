@@ -1,0 +1,10 @@
+/bin
+/pkg
+/target
+/www/.bin
+/www/dist
+/www/node_modules
+/www/.travis.yml
+**/*.rs.bk
+*.log
+Cargo.lock
