@@ -7,6 +7,8 @@ rustup default beta
 npm install npm@latest -g
 ```
 
+Also need to install [`wasm-pack`](https://rustwasm.github.io/wasm-pack/)
+
 ## Quickstart
 
 Build app:
